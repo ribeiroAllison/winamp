@@ -8,7 +8,7 @@ p{
 
 .main-ctn{
     width: 623px;
-    height: 300px;
+    height: 310px;
     background-image: linear-gradient(45deg, #151521, #2a2779);
     border: outset;
     display: flex;
@@ -53,11 +53,20 @@ p{
 
 /* MAIN SECTION */
 
+#main{
+    border-style: inset;
+    margin: 5px auto;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 #infoCtn{
     width: 95%;
-    height: 80%;
-    margin: 5px auto;
-    border-style: inset;
+    
+    
+    
     display: flex;
 }
 
@@ -176,4 +185,18 @@ p{
     background: rgba(211, 211, 211, 0.13);
     width: 95%;
     
+}
+
+/* BUTTONS */
+#buttons{
+    display: flex;
+    margin-left: 5px;
+}
+
+#buttons img{
+    height: 32px;
+}
+
+.marginImg{
+    margin-left: 30px;
 }

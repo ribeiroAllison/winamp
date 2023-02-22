@@ -44,6 +44,19 @@ export default function Player () {
                         <input type="range" className="inputRange" id="timeSelector"/>
 
                     </div>
+                    <div id="buttons">
+                        <img src={require("./img/back-btn.jpg")}/>
+                        <img src={require("./img/play-btn.jpg")}/>
+                        <img src={require("./img/pause-btn.jpg")}/>
+                        <img src={require("./img/stop-btn.jpg")}/>
+                        <img src={require("./img/forward-btn.jpg")}/>
+                        <img className="marginImg" src={require("./img/eject-btn.jpg")}/>
+                        <img className="marginImg" src={require("./img/shuffle-btn.jpg")}/>
+                        <img className="marginImg" src={require("./img/repeat-btn.jpg")}/>
+                        <img className="marginImg" src={require("./img/logo.png")}/>
+                        
+
+                    </div>
                     
                 </div>
             
