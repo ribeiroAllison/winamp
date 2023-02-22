@@ -1,0 +1,46 @@
+/*HEADER SECTION */
+header{
+    margin-bottom: 0;
+    border-style: outset;
+    height: 30px;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+}
+header p{
+    color: white;
+    font-weight: 800;
+}
+
+#headerLeft{
+    width: 42%;
+    
+}
+
+#headerRight{
+    width: 42%;
+}
+
+#headerX{
+    width: 23px;
+    margin-left: 5px;
+}
+
+#headerX:hover{
+    cursor: pointer;
+}
+
+/* MAIN SECTION */
+
+main{
+    width: 623px;
+    height: 300px;
+    background-image: linear-gradient(45deg, #151521, #323150);
+   
+    border: outset;
+    
+
+}
