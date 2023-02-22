@@ -1,28 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* GLOBAL SECTION */
+
+p{
+    color: white;
+}
+
+.main-ctn{
+    width: 623px;
+    height: 300px;
+    background-image: linear-gradient(45deg, #151521, #2a2779);
+    border: outset;
+    display: flex;
+    flex-direction: column;
+}
+
+.green{
+    color: #00D800;
+}
+
 /*HEADER SECTION */
-header{
+#header{
     margin-bottom: 0;
     border-style: outset;
     height: 30px;
 }
 
 
-header{
+#header{
     display: flex;
     align-items: center;
 }
-header p{
+#header p{
     color: white;
     font-weight: 800;
 }
 
-#headerLeft{
+
+.headerImg{
     width: 42%;
-    
 }
 
-#headerRight{
-    width: 42%;
-}
 
 #headerX{
     width: 23px;
@@ -35,12 +53,127 @@ header p{
 
 /* MAIN SECTION */
 
-main{
-    width: 623px;
-    height: 300px;
-    background-image: linear-gradient(45deg, #151521, #323150);
-   
-    border: outset;
-    
+#infoCtn{
+    width: 95%;
+    height: 80%;
+    margin: 5px auto;
+    border-style: inset;
+    display: flex;
+}
 
+/* TIMER SECTION */
+
+
+#timer{
+    height: 130px;
+    width: 250px;
+    margin: 10px;
+    border-style: inset;
+    border-color: gray;
+    background-image: url("./img/timer.jpg");
+    font-family: 'Orbitron';
+    text-align: right;
+    font-size: 25px;
+    
+}
+
+#timer h2{
+    margin: 5px;
+}
+
+/* MUSIC INFO SECTION */
+
+#musicName{
+    background-color: black;
+    width: 300px;
+    border-style: inset;
+    border-color: gray;
+    margin-top: 10px;
+}
+
+#musicName p{
+    height: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#musicData{
+    display: flex;
+    align-items: center;
+}
+
+.numSquare{
+    height: 22px;
+    width: 40px;
+    background-color: black;
+    margin-right :10px ;
+}
+
+.numSquare p{
+    margin: 0;
+    text-align: right;
+}
+
+#numSquareLeft{
+    margin-left: 10px;
+}
+
+#soundType{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.textBlur{
+    text-shadow: 0 0 10px #00D800;
+}
+
+#orange{
+    width: 100px;
+}
+
+#green{
+    width: 70px;
+}
+
+.inputImg {
+    width: 50px;
+}
+
+.inputImg:hover{
+    cursor: pointer;
+}
+
+.inputRange{
+    -webkit-appearance: none;
+    margin-right: 5px;
+    border-radius: 5px;
+    border-style: inset;
+    border-color: gray;
+}
+
+#orange{
+    background: #C9731C;
+    width: 100px;
+    
+}
+
+#green{
+    width: 70px;
+    background: #19b608;
+    
+}
+
+/* TIME SELECTOR */
+
+#musicTimeSelector{
+    display: flex;
+    justify-content: center;
+}
+
+#timeSelector{
+    background: rgba(211, 211, 211, 0.13);
+    width: 95%;
+    
 }
