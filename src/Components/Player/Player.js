@@ -13,7 +13,7 @@ export default function Player () {
                     <img className="headerImg" alt=""  src={require("./img/right-header.jpg")}/>
                     <img className="button" alt=""  id="headerX" src={require("../img/x.jpg")} />
                 </div>
-                <div id="main">
+                <div className="main">
                     <div id="infoCtn">
                         <div id="timer">
                             <h2 className="green">01:32</h2>

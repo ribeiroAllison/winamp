@@ -1,0 +1,25 @@
+#textarea{
+    height: 240px;
+    width: 90%;
+}
+
+#playlist{
+    background-color: black;
+    width: 100%;
+    
+}
+
+#playlist li{
+    width: 500px;
+}
+
+#main-playlist {
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.playing{
+    background-color: rgba(250, 235, 215, 0.185);
+}

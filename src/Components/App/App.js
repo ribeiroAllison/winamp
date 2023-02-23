@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Player from '../Player/Player';
 import Search from "../Search/Search"
+import Playlist from '../Playlist/Playlist';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div>
       <Player />
       <Search />
+      <Playlist />
     </div>
   );
 }

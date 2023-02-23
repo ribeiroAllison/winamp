@@ -11,10 +11,10 @@ export default function Search () {
                     <img className="headerImg" id="leftBar" alt="" src={require("../img/left-header.jpg")} />
                     <p>WINAMP SEARCH</p>
                     <img className="headerImg" id="rightBar" alt="" src={require("../img/right-header.jpg")}/>
-                    <img id="headerX" alt="" src={require("../img/x.jpg")} />
+                    <img className="button" id="headerX" alt="" src={require("../img/x.jpg")} />
                 </div>
                 
-                <div id="main">
+                <div className="main">
                     <div className="searchBoxData" id="inputs">
                         <input className="green" type="text" id="searchBar"/>
                         <button className="button">Search</button>

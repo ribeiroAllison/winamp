@@ -18,6 +18,15 @@ p{
 }
 
 /*HEADER SECTION */
+#leftBar {
+    width: 40%;
+    height: 15px;
+}
+
+#rightBar{
+    width: 30%;
+}
+
 #header{
     margin-bottom: 0;
     border-style: outset;
@@ -48,7 +57,7 @@ p{
 
 
 /* MAIN SECTION */
-#main{
+.main{
     border-style: inset;
     margin: 5px auto;
     height: 90%;
