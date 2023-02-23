@@ -1,5 +1,6 @@
 import "./Player.css";
 import React from "react";
+import "../../Components/Global.css"
 
 export default function Player () {
 
@@ -7,10 +8,10 @@ export default function Player () {
         <React.Fragment>
             <div className="main-ctn">
                 <div id="header">
-                    <img className="headerImg" src={require("./img/left-header.jpg")} />
+                    <img className="headerImg" alt="" src={require("./img/left-header.jpg")} />
                     <p>WINAMP</p>
-                    <img className="headerImg" src={require("./img/right-header.jpg")}/>
-                    <img id="headerX" src={require("./img/x.jpg")} />
+                    <img className="headerImg" alt=""  src={require("./img/right-header.jpg")}/>
+                    <img className="button" alt=""  id="headerX" src={require("../img/x.jpg")} />
                 </div>
                 <div id="main">
                     <div id="infoCtn">
@@ -34,8 +35,8 @@ export default function Player () {
                             <div id="infoInputs">
                                 <input type="range" className="inputRange" id="orange"/>
                                 <input type="range" className="inputRange" id="green"/>
-                                <img className="inputImg" src={require("./img/EQ.jpg")}/>
-                                <img className="inputImg" src={require("./img/PL.jpg")}/>
+                                <img className="inputImg" alt="" src={require("./img/EQ.jpg")}/>
+                                <img className="inputImg" alt="" src={require("./img/PL.jpg")}/>
                             </div>
                             
                         </div>
@@ -45,15 +46,15 @@ export default function Player () {
 
                     </div>
                     <div id="buttons">
-                        <img src={require("./img/back-btn.jpg")}/>
-                        <img src={require("./img/play-btn.jpg")}/>
-                        <img src={require("./img/pause-btn.jpg")}/>
-                        <img src={require("./img/stop-btn.jpg")}/>
-                        <img src={require("./img/forward-btn.jpg")}/>
-                        <img className="marginImg" src={require("./img/eject-btn.jpg")}/>
-                        <img className="marginImg" src={require("./img/shuffle-btn.jpg")}/>
-                        <img className="marginImg" src={require("./img/repeat-btn.jpg")}/>
-                        <img className="marginImg" src={require("./img/logo.png")}/>
+                        <img className="button" alt="" src={require("./img/back-btn.jpg")}/>
+                        <img className="button" alt="" src={require("./img/play-btn.jpg")}/>
+                        <img className="button" alt="" src={require("./img/pause-btn.jpg")}/>
+                        <img className="button" alt="" src={require("./img/stop-btn.jpg")}/>
+                        <img className="button" alt="" src={require("./img/forward-btn.jpg")}/>
+                        <img className="marginImg button" alt="" src={require("./img/eject-btn.jpg")}/>
+                        <img className="marginImg button" alt="" src={require("./img/shuffle-btn.jpg")}/>
+                        <img className="marginImg button" alt="" src={require("./img/repeat-btn.jpg")}/>
+                        <img className="marginImg" alt="" src={require("./img/logo.png")}/>
                         
 
                     </div>

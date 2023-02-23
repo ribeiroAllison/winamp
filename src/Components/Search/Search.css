@@ -1,0 +1,32 @@
+/* HEADER SECTION */
+#leftBar {
+    width: 42%;
+    height: 15px;
+}
+
+#rightBar{
+    width: 30%;
+}
+
+/* MAIN SECTION */
+
+.searchBoxData {
+    display: flex;
+    justify-content: center;
+}
+
+.searchBoxData button {
+    margin-left: 5px;
+}
+
+input{
+    background-color: black;
+    border: inset;
+    border-color: gray;
+    width: 70%;
+}
+
+#mockImg{
+    border:inset;
+}
+
