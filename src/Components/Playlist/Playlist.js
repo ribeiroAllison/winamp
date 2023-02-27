@@ -1,6 +1,7 @@
 import "../../Components/Global.css";
 import "./Playlist.css";
 import React from "react";
+import Track from "../Track/Track";
 
 export default function Playlist (props) {
 
@@ -17,14 +18,12 @@ export default function Playlist (props) {
                 
                 <div className="main" id="main-playlist">
                     
-                    <div className="searchBoxData green"  id="output">
-                        <ol>
-                            {
-                                props.playlistTracks.map(track => {
-                                    return <li key={track.id}>{track.name} - {track.artist} - {track.album}</li>
-                                })
-                            }
-                        </ol>
+                    <div className="searchBoxData green"  id="playlistOutput">
+                        {
+                            props.playlistTracks.map(track => {
+                                return <Track track={track} key={track.id} onAdd={props.onAdd} onRemove={props.onRemove} playlistTracks={props.playlistTracks}/>
+                            })
+                        }
                         
                     </div>
 

@@ -1,5 +1,5 @@
 import "./Track.css";
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 
 export default function Track (props) {
@@ -12,16 +12,26 @@ export default function Track (props) {
     };
 
     function pressPlusButton () {
-        toggleAction();
         props.onAdd(props.track);
     };
 
+    
+
+    useEffect(() =>{
+        !props.playlistTracks ? setIsRemoval(false) : setIsRemoval(true);
+        
+        
+    }, [])
+
     function pressMinusButton () {
-        toggleAction();
+        setIsRemoval(true);
         props.onRemove(props.track);
 
     };
 
+    
+
+    
     function renderAction () {
         if(isRemoval) {
             return <button className="searchButton green" onClick={pressMinusButton}>-</button>

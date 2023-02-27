@@ -35,7 +35,7 @@ function App() {
     <div>
       <Player />
       <Search tracks={searchResultsTracks} onAdd={addTrackToPlaylist} onRemove={removeTrack}/>
-      <Playlist playlistTracks={playlistTracks}/>
+      <Playlist playlistTracks={playlistTracks} onAdd={addTrackToPlaylist} onRemove={removeTrack}/>
     </div>
   );
 }
