@@ -2,12 +2,13 @@
 
 /* MAIN SECTION */
 
-.searchBoxData {
+#searchInputs {
     display: flex;
     justify-content: center;
+    margin-top: 5px;
 }
 
-.searchBoxData button {
+#searchInputs button {
     margin-left: 5px;
 }
 
@@ -20,5 +21,16 @@ input{
 
 #mockImg{
     border:inset;
+}
+
+#searchOutput{
+    background-color: black;
+    height: 180px;
+    width: 90%;
+    margin: auto;
+    border: inset;
+    border-color: gray;
+    
+
 }
 

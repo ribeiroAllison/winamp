@@ -1,12 +1,16 @@
 import "../../Components/Global.css"
 import "./Search.css"
 import React from "react"
+import Track from "../Track/Track"
 
-export default function Search () {
+export default function Search (props) {
+
+
+    
 
     return(
         <React.Fragment>
-             <div className="main-ctn">
+            <div className="main-ctn">
                 <div id="header">
                     <img className="headerImg" id="leftBar" alt="" src={require("../img/left-header.jpg")} />
                     <p>WINAMP SEARCH</p>
@@ -15,18 +19,18 @@ export default function Search () {
                 </div>
                 
                 <div className="main">
-                    <div className="searchBoxData" id="inputs">
+                    <div className="search" id="searchInputs">
                         <input className="green" type="text" id="searchBar"/>
                         <button className="button">Search</button>
                     </div>
-                    <div className="searchBoxData green"  id="output">
-                        {/* <input className="green textarea" type="textarea" id="textarea"/> */}
-                        <img className="textarea" id="mockImg" alt="" src={require("./img/search-result.jpg")}/>
+                    <div className="green"  id="searchOutput">
+                        {
+                            props.tracks.map(track => {
+                                return <Track track={track} key={track.id} onAdd={props.onAdd} onRemove={props.onRemove}/>
+                            })
+                        }
                     </div>
-                    <div className="searchBoxData"  id="buttons">
-                        <img className="button" alt="Add button" id="add" src={require("./img/ADD.jpg")}/>
-                        <img className="button" alt="Remove button" id="remove" src={require("./img/REM.jpg")}/>
-                    </div>
+                    
 
                 </div>
                     

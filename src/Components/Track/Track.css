@@ -1,0 +1,22 @@
+.searchButton{
+    background: transparent;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    margin: 5px 0;
+}
+
+.list li{
+    list-style: none;
+}
+
+.list button:hover{
+    cursor: pointer;
+    color: green;
+}
+

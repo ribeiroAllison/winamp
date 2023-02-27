@@ -2,7 +2,8 @@ import "../../Components/Global.css";
 import "./Playlist.css";
 import React from "react";
 
-export default function Playlist () {
+export default function Playlist (props) {
+
 
     return(
         <React.Fragment>
@@ -17,9 +18,12 @@ export default function Playlist () {
                 <div className="main" id="main-playlist">
                     
                     <div className="searchBoxData green"  id="output">
-                        <ol id="playlist">
-                            <li className="playing">Even Flow - Pearl Jam - 10 album (1990)</li>
-                            <li>Oceans - Live MTV Unplugged</li>
+                        <ol>
+                            {
+                                props.playlistTracks.map(track => {
+                                    return <li key={track.id}>{track.name} - {track.artist} - {track.album}</li>
+                                })
+                            }
                         </ol>
                         
                     </div>
