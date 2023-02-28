@@ -5,26 +5,17 @@ import React, {useState, useEffect} from 'react';
 export default function Track (props) {
 
     let [isRemoval, setIsRemoval] = useState(false);
-
-    function toggleAction () {
-        isRemoval? setIsRemoval(false) : setIsRemoval(true);
-        
-    };
+    
 
     function pressPlusButton () {
         props.onAdd(props.track);
     };
 
-    
-
     useEffect(() =>{
         !props.playlistTracks ? setIsRemoval(false) : setIsRemoval(true);
-        
-        
-    }, [])
+    }, [props])
 
     function pressMinusButton () {
-        setIsRemoval(true);
         props.onRemove(props.track);
 
     };
